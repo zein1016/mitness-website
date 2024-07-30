@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mitness - Your Mental Wellness Gym</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <video src="videos/logo-animation.mp4" autoplay loop muted class="logo"></video>
+            <div id="lottie-logo" class="logo"></div>
         </header>
         <h1>Mitness</h1>
         <p class="tagline">Your Mental Wellness Gym</p>
@@ -24,5 +25,15 @@
             <p>&copy; Mitness Limited 2024</p>
         </footer>
     </div>
+
+    <script>
+        lottie.loadAnimation({
+            container: document.getElementById('lottie-logo'), // The container element
+            renderer: 'svg', // Use 'svg' renderer for vector-based animations
+            loop: true, // Loop the animation
+            autoplay: true, // Start playing the animation automatically
+            path: 'animations/Logo-Animation.json' // Path to the animation JSON file
+        });
+    </script>
 </body>
 </html>
