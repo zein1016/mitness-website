@@ -1,6 +1,8 @@
 body {
-    background-color: #e7e4f3;
-    color: #252525;
+    background: linear-gradient(45deg, #e7e4f3, #c4c2e7);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #252525; /* Ensures text is still visible over the gradient */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -11,15 +13,29 @@ body {
     min-height: 100vh;
 }
 
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .container {
     text-align: center;
     padding: 20px;
     max-width: 600px;
     margin: auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional for content visibility */
+    border-radius: 10px; /* Optional for rounded corners */
 }
 
 .logo {
-    max-width: 200px; /* Adjust size as needed */
+    max-width: 150px;
     margin-bottom: 20px;
 }
 
@@ -71,6 +87,6 @@ nav ul li a:hover {
 
 footer {
     margin-top: 20px;
-    font-size: 0.7em; /* Adjusted to be smaller */
+    font-size: 0.7em;
     color: #8e99ad;
 }
