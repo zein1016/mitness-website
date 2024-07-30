@@ -37,18 +37,18 @@ body {
 .logo {
     width: 250px; /* Adjust size as needed */
     height: 250px; /* Adjust size as needed */
-    margin: 0 auto 20px;
+    margin: 0 auto 10px; /* Reduced bottom margin */
 }
 
 h1 {
     font-size: 2.5em;
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Reduced bottom margin */
 }
 
 .tagline {
     color: #8e93ff;
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Adjusted margin for spacing */
 }
 
 .download-btn {
