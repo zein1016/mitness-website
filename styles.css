@@ -2,7 +2,7 @@ body {
     background: linear-gradient(45deg, #e7e4f3, #c4c2e7);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
-    color: #252525; /* Ensures text is still visible over the gradient */
+    color: #252525;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -30,13 +30,15 @@ body {
     padding: 20px;
     max-width: 600px;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.8); /* Optional for content visibility */
-    border-radius: 10px; /* Optional for rounded corners */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
 }
 
 .logo {
-    max-width: 150px;
-    margin-bottom: 20px;
+    max-width: 150px; /* Adjust size as needed */
+    border-radius: 10px; /* Optional for rounded corners */
+    display: block;
+    margin: 0 auto 20px;
 }
 
 h1 {
